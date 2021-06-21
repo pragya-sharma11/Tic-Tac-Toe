@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
                    b1=0;
                    i++;
                }
-
+               choosePlayer();
+               winningGame();
             }
         });
     }
