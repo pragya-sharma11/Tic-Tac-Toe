@@ -45,10 +45,32 @@ public class MainActivity extends AppCompatActivity {
                 button7.setImageDrawable(null);
                 button8.setImageDrawable(null);
                 button9.setImageDrawable(null);
+                resetValue();
                 xCount=0;
                 oCount=0;
                 scoreX.setText("Score X : 0 ");
                 scoreO.setText("Score 0 : 0 ");
+            }
+        });
+    }
+    private void resetValue(){
+        b1 = 5; b2 = 5; b3 = 5; b4 = 5; b5 = 5; b6 = 5; b7 = 5; b8 = 5; b9 = 5;
+    }
+    private void onClickButton1(){
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               if(startGame.equals("X")){
+                   button1.setImageResource(R.drawable.cross);
+                   b1=1;
+                   i++;
+               }
+               else{
+                   button1.setImageResource(R.drawable.circle);
+                   b1=0;
+                   i++;
+               }
+
             }
         });
     }
