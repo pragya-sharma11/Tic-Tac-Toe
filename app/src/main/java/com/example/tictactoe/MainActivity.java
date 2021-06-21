@@ -81,12 +81,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(startGame.equals("X")){
                     button2.setImageResource(R.drawable.cross);
-                    b1=1;
+                    b2=1;
                     i++;
                 }
                 else{
                     button2.setImageResource(R.drawable.circle);
-                    b1=0;
+                    b2=0;
                     i++;
                 }
                 choosePlayer();
