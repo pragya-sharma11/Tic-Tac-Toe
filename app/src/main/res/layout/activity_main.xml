@@ -54,6 +54,17 @@
         android:layout_toRightOf="@id/btn5"
         android:layout_marginLeft="-14dp">
     </RelativeLayout>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="RESET"
+        android:id="@+id/reset"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:backgroundTint="@color/purple_200"/>
 
 
 </RelativeLayout>
