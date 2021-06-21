@@ -170,6 +170,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    private void onClickButton7(){
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(startGame.equals("X")){
+                    button7.setImageResource(R.drawable.cross);
+                    b7=1;
+                    i++;
+                }
+                else{
+                    button7.setImageResource(R.drawable.circle);
+                    b7=0;
+                    i++;
+                }
+                choosePlayer();
+                winningGame();
+            }
+        });
+    }
     private void choosePlayer(){
         if(startGame.equals("X")){
             startGame="O";
