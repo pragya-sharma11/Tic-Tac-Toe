@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else if(((b1==0) && (b2==0) && (b3==0)) ||((b1==0) && (b4==0) &&(b7==0)) || ((b2==0) && (b5==0)&&(b8==0)) ||((b4==0)&&(b5==0)&&(b6==0))||
-                ((b3==0)&&(b6==0)&&(b9==0)) ||((b7==0)&&(b8==0)&&(b9==0))){
+                ((b3==0)&&(b6==0)&&(b9==0)) ||((b7==0)&&(b8==0)&&(b9==0))) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setMessage("Player O Wins").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
@@ -294,7 +294,28 @@ public class MainActivity extends AppCompatActivity {
             AlertDialog alertDialog = builder.create();
             alertDialog.show();
             oCount++;
-            scoreX.setText("Player X : "+oCount);
+            scoreX.setText("Player X : " + oCount);
+        }
+        else if(b1!=5 && b2!=5 && b3!=5 && b4!=5 && b5!=5 && b6!=5 &&
+                b7!=5 && b8!=5 && b9!=5 ){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Are you both noob.Try to win again!!").setCancelable(false).setPositiveButton("Try Again", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    button1.setImageDrawable(null);
+                    button2.setImageDrawable(null);
+                    button3.setImageDrawable(null);
+                    button4.setImageDrawable(null);
+                    button5.setImageDrawable(null);
+                    button6.setImageDrawable(null);
+                    button7.setImageDrawable(null);
+                    button8.setImageDrawable(null);
+                    button9.setImageDrawable(null);
+                    resetValue();
+                }
+            });
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
         }
     }
 }
