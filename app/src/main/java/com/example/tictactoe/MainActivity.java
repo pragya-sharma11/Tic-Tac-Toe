@@ -31,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
         scoreO=findViewById(R.id.score0);
         reset = findViewById(R.id.reset);
         onClickReset();
+        onClickButton1();
+        onClickButton2();
+        onClickButton3();
+        onClickButton4();
+        onClickButton5();
+        onClickButton6();
+        onClickButton7();
+        onClickButton8();
+        onClickButton9();
+
     }
     private void onClickReset(){
         reset.setOnClickListener(new View.OnClickListener() {
@@ -76,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton2(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -95,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton3(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -114,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton4(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -133,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton5(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -152,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton6(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -171,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton7(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -190,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton8(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -209,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void onClickButton9(){
-        button1.setOnClickListener(new View.OnClickListener() {
+        button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(startGame.equals("X")){
@@ -234,5 +244,8 @@ public class MainActivity extends AppCompatActivity {
         else{
             startGame="X";
         }
+    }
+    private void winningGame(){
+
     }
 }
