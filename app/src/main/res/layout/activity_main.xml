@@ -8,5 +8,20 @@
     android:background="#343656"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/btn5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#343656">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/btnImage5"/>
+    </RelativeLayout>
+
 
 </RelativeLayout>
