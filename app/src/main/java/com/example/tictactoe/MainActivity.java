@@ -3,6 +3,7 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,5 +30,26 @@ public class MainActivity extends AppCompatActivity {
         scoreX=findViewById(R.id.scoreX);
         scoreO=findViewById(R.id.score0);
         reset = findViewById(R.id.reset);
+        onClickReset();
+    }
+    private void onClickReset(){
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button1.setImageDrawable(null);
+                button2.setImageDrawable(null);
+                button3.setImageDrawable(null);
+                button4.setImageDrawable(null);
+                button5.setImageDrawable(null);
+                button6.setImageDrawable(null);
+                button7.setImageDrawable(null);
+                button8.setImageDrawable(null);
+                button9.setImageDrawable(null);
+                xCount=0;
+                oCount=0;
+                scoreX.setText("Score X : 0 ");
+                scoreO.setText("Score 0 : 0 ");
+            }
+        });
     }
 }
