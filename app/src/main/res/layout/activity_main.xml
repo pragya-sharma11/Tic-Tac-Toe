@@ -22,6 +22,14 @@
             android:src="@drawable/ic_launcher_background"
             android:id="@+id/btnImage5"/>
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="8dp"
+        android:background="#f69e78"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn5"
+        android:layout_marginBottom="8dp">
+    </RelativeLayout>
 
 
 </RelativeLayout>
